@@ -1,9 +1,9 @@
 pipeline {
     agent {label 'DOCKER'}
-    stages {
-        stage ('docker push') {
+stages {
+    stage ('docker image pull&deploy') {
             steps {
-               sh 'sh Docker.sh'
+               sh 'sh Dockerfile.sh'
             }
         }
     }
