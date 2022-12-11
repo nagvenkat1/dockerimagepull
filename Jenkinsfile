@@ -3,7 +3,7 @@ pipeline {
 stages {
     stage ('docker image pull&deploy') {
             steps {
-               sh 'sh Dockerfile.sh'
+               sh 'sh Docker.sh'
             }
         }
     }
